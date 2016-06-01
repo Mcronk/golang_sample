@@ -19,6 +19,4 @@ func main() {
     r := mux.NewRouter()
     r.HandleFunc("/", Handler)
     r.HandleFunc("/index", IndexHandler )
-
-    log.Fatal(http.ListenAndServe(":8000", r))
 }
