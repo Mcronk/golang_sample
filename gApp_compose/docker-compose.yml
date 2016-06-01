@@ -1,0 +1,6 @@
+web:
+   container_name: web
+   image: golang:latest
+#   volumes:
+#      - /home/michael/work/source/github.com/mcronk/gApp:/app
+   command: bash -c "git clone https://github.com/Mcronk/gApp.git && go get github.com/gorilla/mux && cd gApp/gApp && go build gorilla_server.go && chmod u+x gorilla_server"
