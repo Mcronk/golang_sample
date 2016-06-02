@@ -1,0 +1,14 @@
+name: golang_sample
+environments:
+- name: dev
+  type: ecs
+  services:
+    - deploymentConfiguration:
+        maximumPercent: 200
+        minimumHealthyPercent: 50
+      desiredCount: 1
+      loadBalancers:
+      - containerName: app
+        containerPort: 8000
+        loadBalancerName: nile-sample-api-prod
+      serviceName: main
