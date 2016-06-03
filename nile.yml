@@ -1,6 +1,6 @@
 name: golang_sample
 environments:
-- name: dev
+- name: prod
   type: ecs
   services:
     - deploymentConfiguration:
