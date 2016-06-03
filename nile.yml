@@ -9,6 +9,13 @@ environments:
       desiredCount: 1
       loadBalancers:
       - containerName: app
-        containerPort: 8000
+        containerPort: 8080
         loadBalancerName: nile-sample-api-prod
       serviceName: main
+- name: test
+  type: ecs
+  override:
+    services:
+      app:
+        image: quay.io/washpost/golang_sample:latest
+        ports: 8000
