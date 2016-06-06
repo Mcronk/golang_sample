@@ -19,4 +19,4 @@ environments:
       app:
         image: quay.io/washpost/golang_sample:latest
         ports: 
-         -"8000:8000"
+         - "8000:8000"
