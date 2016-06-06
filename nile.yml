@@ -20,3 +20,10 @@ environments:
         image: quay.io/washpost/golang_sample:latest
         ports: 
          - "8000:8000"
+  services:
+    - region: us-east-1
+      deploymentConfiguration:
+        maximumPercent: 200
+        minimumHealthyPercent: 50
+      desiredCount: 1
+      serviceName: main
