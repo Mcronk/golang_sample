@@ -1,22 +1,22 @@
 name: golang_sample
 environments:
-- name: prod
-  type: ecs
-  services:
-    - deploymentConfiguration:
-        maximumPercent: 200
-        minimumHealthyPercent: 50
-      desiredCount: 1
-      loadBalancers:
-      - containerName: app
-        containerPort: 8080
-        loadBalancerName: nile-sample-api-prod
-      serviceName: main
+#- name: prod
+#  type: ecs
+#  services:
+#    - deploymentConfiguration:
+#        maximumPercent: 200
+#        minimumHealthyPercent: 50
+#      desiredCount: 1
+#      loadBalancers:
+#      - containerName: app
+#        containerPort: 8080
+#        loadBalancerName: nile-sample-api-prod
+#      serviceName: main
 - name: test
   type: ecs
-  override:
-    services:
-      app:
+  override: 
+    services: 
+      app: 
         image: quay.io/washpost/golang_sample:latest
         ports: 
          - "8000:8000"
