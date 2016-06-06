@@ -5,7 +5,7 @@ services:
       image: quay.io/washpost/golang_sample:latest
 #      image: golang:latest
       ports:
-        - "8000:8000"
+        - "8001:8000"
 #   volumes:
 #      - /home/michael/work/source/github.com/mcronk/gApp:/app
 #      command: bash -c "git clone https://github.com/Mcronk/golang_sample.git && go get github.com/gorilla/mux && cd golang_sample/gApp && go build gorilla_server.go && chmod u+x gorilla_server && ./gorilla_server"
