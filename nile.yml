@@ -9,7 +9,7 @@ environments:
       desiredCount: 1
       loadBalancers:
       - containerName: web
-        containerPort: 8080
+        containerPort: 8000
         loadBalancerName: golangLB
       serviceName: main
 - name: test
@@ -19,7 +19,7 @@ environments:
       app: 
         image: quay.io/washpost/golang_sample:latest
         ports: 
-         - "8111:8080"
+         - "8080:8000"
   services:
     - region: us-east-1
       deploymentConfiguration:
