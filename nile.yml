@@ -10,7 +10,7 @@ environments:
       loadBalancers:
       - containerName: web
         containerPort: 8000
-        loadBalancerName: golangLB
+        loadBalancerName: golangLB2
       serviceName: main
 - name: test
   type: ecs
