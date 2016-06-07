@@ -10,7 +10,7 @@ environments:
       loadBalancers:
       - containerName: app
         containerPort: 8080
-        loadBalancerName: nile-sample-api-prod
+        loadBalancerName: golangLB
       serviceName: main
 - name: test
   type: ecs
