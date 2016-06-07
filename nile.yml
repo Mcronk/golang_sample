@@ -8,7 +8,7 @@ environments:
         minimumHealthyPercent: 50
       desiredCount: 1
       loadBalancers:
-      - containerName: app
+      - containerName: test
         containerPort: 8080
         loadBalancerName: golangLB
       serviceName: main
